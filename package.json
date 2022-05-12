@@ -1,0 +1,55 @@
+{
+  "name": "vue3-vite-starter",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5050",
+    "test": "concurrently -s -n test: 'npm:test:*'",
+    "test:unit": "vitest --environment jsdom --run",
+    "lint": "concurrently -s --kill-others-on-fail -n lint: 'npm:lint:*(!fix)'",
+    "lint:js": "eslint . --ext .js,.vue --ignore-path .gitignore",
+    "lint:css": "stylelint --ignore-path .gitignore src/**/*.css src/**/*.vue",
+    "lint:md": "markdownlint-cli2 README.md \"**/*.md\" \".github/**/*.md\" \"#node_modules\"",
+    "lint:prettier": "prettier --check --ignore-path .gitignore .",
+    "lint:fix": "concurrently -s --kill-others-on-fail -n lint:fix: 'npm:lint:fix:*'",
+    "lint:fix:js": "eslint . --ext .js,.vue --ignore-path .gitignore --fix",
+    "lint:fix:css": "stylelint --ignore-path .gitignore src/**/*.css src/**/*.vue --fix",
+    "lint:fix:md": "markdownlint-cli2-fix README.md \"**/*.md\" \".github/**/*.md\" \"#node_modules\"",
+    "lint:fix:prettier": "prettier --write --ignore-path .gitignore .",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "vue": "^3.2.33",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "@vue/test-utils": "^2.0.0-rc.20",
+    "autoprefixer": "^10.4.5",
+    "eslint": "^8.5.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "husky": "^7.0.4",
+    "jsdom": "^19.0.0",
+    "lint-staged": "^12.4.1",
+    "markdownlint-cli2": "^0.4.0",
+    "prettier": "^2.5.1",
+    "stylelint": "^14.8.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^25.0.0",
+    "vite": "^2.9.5",
+    "vitest": "^0.9.3"
+  },
+  "lint-staged": {
+    "*.{css,vue}": "stylelint --ignore-path .gitignore --fix",
+    "*.{js,vue}": "eslint --ignore-path .gitignore --cache --fix",
+    "*.{js,css,vue,md}": "prettier --ignore-path .gitignore --write",
+    "*.md": "markdownlint-cli2-fix"
+  }
+}

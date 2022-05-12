@@ -1,0 +1,20 @@
+{
+  "git.autofetch": true,
+  "files.insertFinalNewline": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
+    "source.fixAll.prettier": true
+  },
+  "editor.linkedEditing": true,
+  "editor.suggest.preview": true,
+  "editor.bracketPairColorization.enabled": true,
+  "javascript.preferences.quoteStyle": "double",
+  "javascript.referencesCodeLens.enabled": true,
+  "eslint.packageManager": "npm",
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "[html][vue][javascript][json][jsonc][css][markdown][yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
