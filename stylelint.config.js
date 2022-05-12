@@ -8,6 +8,7 @@ module.exports = {
   ],
   rules: {
     "declaration-no-important": true,
+    "selector-class-pattern": null,
   },
   ignoreFiles: ["node_modules/**/*.css", "src/**/*.js"],
 };

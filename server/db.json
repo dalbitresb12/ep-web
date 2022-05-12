@@ -1,0 +1,32 @@
+{
+  "challenges": [
+    {
+      "id": 1,
+      "title": "Koala",
+      "businessId": 1,
+      "urlToImage": "https://media.istockphoto.com/vectors/koala-outline-logo-icon-australian-animal-for-web-and-design-vector-id1205963214?s=612x612",
+      "challengeType": "individual"
+    },
+    {
+      "id": 2,
+      "title": "Cat",
+      "businessId": 2,
+      "urlToImage": "https://as2.ftcdn.net/v2/jpg/02/25/25/81/1000_F_225258132_kKs9Ib4S2EbjkL8V2YqqYRNbITeOPQIz.jpg",
+      "challengeType": "team"
+    },
+    {
+      "id": 3,
+      "title": "Car",
+      "businessId": 1,
+      "urlToImage": "https://static.vecteezy.com/system/resources/previews/001/416/626/large_2x/car-outline-icon-vector.jpg",
+      "challengeType": "team"
+    },
+    {
+      "urlToImage": "https://as2.ftcdn.net/v2/jpg/02/25/25/81/1000_F_225258132_kKs9Ib4S2EbjkL8V2YqqYRNbITeOPQIz.jpg",
+      "title": "test new",
+      "businessId": 1,
+      "challengeType": "individual",
+      "id": 4
+    }
+  ]
+}

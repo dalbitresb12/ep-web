@@ -4,6 +4,6 @@
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "stylelint.vscode-stylelint",
-    "EditorConfig.EditorConfig",
+    "EditorConfig.EditorConfig"
   ]
 }
